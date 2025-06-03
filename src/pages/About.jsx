@@ -9,8 +9,8 @@ const About = () => {
   return (
     <div className="h-[100vh] w-full bg-colabify-back relative">
       <Header />
-    <div className="absolute w-full h-full bg-black/10 z-8 backdrop-blur-[2px]"></div>
-      <div className="flex flex-col h-[81vh] w-[38%] overflow-hidden items-center top-[50%] left-[50%] relative -translate-x-[50%] -translate-y-[48%] bg-white rounded-[24px] z-10 -rotate-1">
+      <div className="absolute w-full h-full bg-black/30 z-8 backdrop-blur-[8px]"></div>
+      <div className="flex flex-col h-[75vh] w-[35%] overflow-hidden items-center top-[50%] left-[50%] relative -translate-x-[50%] -translate-y-[50%] bg-white rounded-[24px] z-10 -rotate-1">
         <img src={starField} alt="star_field z-10 absolute top-0"></img>
         <div className="absolute  top-10 left-11">
           <div className="flex justify-center border-[2px] border-white items-center rotate-1 h-[52px] w-[159px] font-jarkata text-[24px]  font-semibold bg-colabify-blue text-white rounded-[12px]">
@@ -18,7 +18,7 @@ const About = () => {
           </div>
           <img src={tri} className="absolute top-[53px] left-10 h-[14px]"></img>
         </div>
-        <div className="h-[288px] w-[80%] left-10 top-30 text-[16px] z-15 absolute font-inter text-colabify-textBlack">
+        <div className="h-[288px] w-[80%] left-10 top-30 text-[14px] z-15 absolute font-inter text-colabify-textBlack">
           <b>Collabify</b> is a platform built to connect creators and brands
           through performance-based, pay-per-view campaigns. We’re creating a
           fair, fast, and transparent way for both sides to collaborate and earn

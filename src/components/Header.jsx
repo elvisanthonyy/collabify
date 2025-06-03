@@ -2,10 +2,10 @@ import React from "react";
 import header from "../assets/Header.png";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ name }) => {
   return (
     <div>
-      <Link to={"/collabify/about"}>
+      <Link to={`/collabify/${name == "home" ? "about" : ""}`}>
         <img
           src={header}
           alt="header"
