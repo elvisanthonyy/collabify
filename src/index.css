@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-v3-latin-regular.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jarkata";
+  src: url("/fonts/jarkata-v1-latin-regular.woff2") format("woff2");
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-colabify-back: #141216;
+  --color-colabify-green: #d6ff51;
+  --color-colabify-darkGreen: #4a5d0a;
+  --color-colabify-grey: #b8b8b8;
+  --color-colabify-blue: #7f22ff;
+  --color-colabify-black: #202020;
+  --color-colabify-grayInput: #f7f7f7;
+  --color-colabify-textBlack: #323232;
+  --color-colabify-textYellow: #131702;
+  --font-inter: Inter, sans-serif;
+  --font-jarkata: Jarkata, sans-serif;
+}
