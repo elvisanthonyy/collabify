@@ -10,7 +10,7 @@ const Creator = () => {
   const [email, setEmail] = useState("");
   const [whatsappNo, setWhatsappNo] = useState("");
   const [refCode, setRefCode] = useState("");
-  
+
   //ensure form doesn't move with and empty input
   const [isInputEmpty, setIsInputEmpty] = useState(false);
 
@@ -28,7 +28,6 @@ const Creator = () => {
 
   const handleSubmit = () => {
     if (inputs[formIndex - 1].length > 0) {
-     
     }
     {
       setIsInputEmpty(true);
@@ -42,8 +41,10 @@ const Creator = () => {
 
   return (
     <div className="h-[110vh] w-full bg-colabify-back relative">
-      <Header />
-      {formIndex === 3 && (<div className="absolute w-full h-full bg-black/2 z-8 backdrop-blur-xs"></div>)}
+      <Header name="creator" />
+      {formIndex === 3 && (
+        <div className="absolute w-full h-full bg-black/2 z-8 backdrop-blur-xs"></div>
+      )}
       <form className="flex flex-col h-[80vh] w-[38%]  items-center top-[50%] left-[50%] fixed -translate-x-[50%] -translate-y-[45%] bg-white rounded-[24px] z-10">
         <div className="flex justify-between items-center w-[80%] mt-10">
           <div className="flex justify-center items-center h-[48px] w-[219px]  bg-colabify-blue text-white rounded-[12px]">
@@ -54,50 +55,48 @@ const Creator = () => {
 
         {formIndex === 1 && (
           <div>
-            <label className='ml-10'>Brand Name</label>
-          <input
-            type="text"
-            value={brandName}
-            className={`bg-colabify-grayInput p-2 outline-none h-[48px] w-[82%] mx-10 my-2 px-5 rounded-[12px] ${
-              isInputEmpty ? "border-red-700 border-1" : "border-black"
-            }`}
-            placeholder="Enter Brandname "
-            onChange={(e) => satBrandName(e.target.value)}
-          /> 
-           <label className='ml-10'>Email</label>
-          <input
-            type="text"
-            value={email}
-            className={`bg-colabify-grayInput p-2 outline-none h-[48px] w-[82%] mx-10 my-2 px-5 rounded-[12px] ${
-              isInputEmpty ? "border-red-700 border-1" : "border-black"
-            }`}
-            placeholder="Enter Email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-           <label className='ml-10'>WhatsApp NO</label>
-          <input
-            type="text"
-            value={whatsappNo}
-            className={`bg-colabify-grayInput p-2 outline-none h-[48px] w-[82%] mx-10 my-2 px-5 rounded-[12px] ${
-              isInputEmpty ? "border-red-700 border-1" : "border-black"
-            }`}
-            placeholder="Enter WhatsApp no"
-            onChange={(e) => setWhatsappNo(e.target.value)}
-          />
-           <label className='ml-10'>Ref Code</label>
-          <input
-            type="text"
-            value={refCode}
-            className={`bg-colabify-grayInput p-2 outline-none h-[48px] w-[82%] mx-10 my-2 px-5 rounded-[12px] ${
-              isInputEmpty ? "border-red-700 border-1" : "border-black"
-            }`}
-            placeholder="Enter Refferal Code"
-            onChange={(e) => setRefCode(e.target.value)}
-          />
+            <label className="ml-10">Brand Name</label>
+            <input
+              type="text"
+              value={brandName}
+              className={`bg-colabify-grayInput p-2 outline-none h-[48px] w-[82%] mx-10 my-2 px-5 rounded-[12px] ${
+                isInputEmpty ? "border-red-700 border-1" : "border-black"
+              }`}
+              placeholder="Enter Brandname "
+              onChange={(e) => satBrandName(e.target.value)}
+            />
+            <label className="ml-10">Email</label>
+            <input
+              type="text"
+              value={email}
+              className={`bg-colabify-grayInput p-2 outline-none h-[48px] w-[82%] mx-10 my-2 px-5 rounded-[12px] ${
+                isInputEmpty ? "border-red-700 border-1" : "border-black"
+              }`}
+              placeholder="Enter Email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label className="ml-10">WhatsApp NO</label>
+            <input
+              type="text"
+              value={whatsappNo}
+              className={`bg-colabify-grayInput p-2 outline-none h-[48px] w-[82%] mx-10 my-2 px-5 rounded-[12px] ${
+                isInputEmpty ? "border-red-700 border-1" : "border-black"
+              }`}
+              placeholder="Enter WhatsApp no"
+              onChange={(e) => setWhatsappNo(e.target.value)}
+            />
+            <label className="ml-10">Ref Code</label>
+            <input
+              type="text"
+              value={refCode}
+              className={`bg-colabify-grayInput p-2 outline-none h-[48px] w-[82%] mx-10 my-2 px-5 rounded-[12px] ${
+                isInputEmpty ? "border-red-700 border-1" : "border-black"
+              }`}
+              placeholder="Enter Refferal Code"
+              onChange={(e) => setRefCode(e.target.value)}
+            />
           </div>
-
         )}
-      
 
         {formIndex === 4 && (
           <div>

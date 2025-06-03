@@ -8,7 +8,7 @@ import tri from "../assets/yellow_tri.png";
 const About = () => {
   return (
     <div className="h-[100vh] w-full bg-colabify-back relative">
-      <Header />
+      <Header name="about" />
       <div className="absolute w-full h-full bg-black/30 z-8 backdrop-blur-[8px]"></div>
       <div className="flex flex-col h-[75vh] w-[35%] overflow-hidden items-center top-[50%] left-[50%] relative -translate-x-[50%] -translate-y-[50%] bg-white rounded-[24px] z-10 -rotate-1">
         <img src={starField} alt="star_field z-10 absolute top-0"></img>
