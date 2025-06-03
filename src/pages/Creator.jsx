@@ -45,7 +45,7 @@ const Creator = () => {
       {formIndex === 3 && (
         <div className="absolute w-full h-full bg-black/2 z-8 backdrop-blur-xs"></div>
       )}
-      <form className="flex flex-col h-[80vh] w-[38%]  items-center top-[50%] left-[50%] fixed -translate-x-[50%] -translate-y-[45%] bg-white rounded-[24px] z-10">
+      <form className="flex flex-col h-[80vh] w-[35%]  items-center top-[50%] left-[50%] fixed -translate-x-[50%] -translate-y-[45%] bg-white rounded-[24px] z-10">
         <div className="flex justify-between items-center w-[80%] mt-10">
           <div className="flex justify-center items-center h-[48px] w-[219px]  bg-colabify-blue text-white rounded-[12px]">
             Join as Creator

@@ -15,11 +15,11 @@ const Header = ({ name }) => {
             <img src={home} className="ml-2"></img>
           </Link>
         )}
-        <img src={collab} className="ml-2"></img>
+        <Link to={"/collabify/about"}>
+          <img src={collab} className="ml-2"></img>
+        </Link>
         {name == "home" || name == "creator" ? (
-          <Link to={"/collabify/about"}>
-            <img src={phone} className="ml-2"></img>
-          </Link>
+          <img src={phone} className="ml-2"></img>
         ) : (
           ""
         )}
