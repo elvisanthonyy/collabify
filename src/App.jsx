@@ -10,11 +10,11 @@ import PageNotFound from "./pages/PageNotFound.jsx";
 const App = () => {
   return (
     <Routes>
-      <Route path="/colabify/" element={<Home />} />
-      <Route path="/colabify/about" element={<About />} />
-      <Route path="/colabify/creator" element={<Creator />} />
-      <Route path="/colabify/profile" element={<Profile />} />
-      <Route path="/colabify/business" element={<Business />} />
+      <Route path="/collabify/" element={<Home />} />
+      <Route path="/collabify/about" element={<About />} />
+      <Route path="/collabify/creator" element={<Creator />} />
+      <Route path="/collabify/profile" element={<Profile />} />
+      <Route path="/collabify/business" element={<Business />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

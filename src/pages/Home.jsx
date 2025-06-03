@@ -15,7 +15,7 @@ const Home = () => {
           </div>*/
   return (
     <>
-      <div className="h-[110vh] w-full bg-colabify-back relative">
+      <div className="h-[100vh] w-full bg-colabify-back relative">
         <Header />
         <div className="flex flex-col justify-center items-center top-[50%] left-[50%] relative -translate-x-[50%] -translate-y-[50%] z-10">
           <div>
@@ -30,7 +30,7 @@ const Home = () => {
             launch.
           </div>
           <div className="flex">
-            <Link to={"/colabify/business"}>
+            <Link to={"/collabify/business"}>
               <div className="relative cursor-pointer m-[8px] hover:opacity-75">
                 <div className="flex justify-center items-center bg-colabify-green w-[162px] h-[56px] rounded-[82px] z-10text-[16px] font-inter font-medium text-colabify-textYellow absolute -top-[8px]">
                   I am a Brand
@@ -38,7 +38,7 @@ const Home = () => {
                 <div className="flex justify-center bg-colabify-darkGreen w-[162px] h-[56px] rounded-[64px] overflow-hidden  z-8"></div>
               </div>
             </Link>
-            <Link to={"/colabify/creator"}>
+            <Link to={"/collabify/creator"}>
               <div className="relative cursor-pointer m-[8px] hover:opacity-75">
                 <div className="flex justify-center items-center bg-white w-[162px] h-[56px] rounded-[82px] z-10 text-[16px] font-inter font-medium text-colabify-black absolute -top-[8px]">
                   I am a Creator
