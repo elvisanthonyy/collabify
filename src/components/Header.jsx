@@ -10,15 +10,17 @@ const Header = ({ name }) => {
   return (
     <div>
       <div className="flex items-center justify-between fixed top-6 left-[50%] -translate-x-[50%] z-15">
-        {name == "creator" && (
+        {name == "creator" || name == "brand" ? (
           <Link to={"/collabify/"}>
             <img src={home} className="ml-2"></img>
           </Link>
+        ) : (
+          ""
         )}
         <Link to={"/collabify/about"}>
           <img src={collab} className="ml-2"></img>
         </Link>
-        {name == "home" || name == "creator" ? (
+        {name == "home" || name == "creator" || name == "brand" ? (
           <img src={phone} className="ml-2"></img>
         ) : (
           ""

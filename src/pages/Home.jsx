@@ -19,9 +19,9 @@ const Home = () => {
         <Header name="home" />
         <div className="flex flex-col justify-center items-center top-[50%] left-[50%] relative -translate-x-[50%] -translate-y-[50%] z-10">
           <div>
-            <img src={soon}></img>
+            <img src={soon} className=""></img>
           </div>
-          <div className="w-[472px] text-center m-7 text-white font-inter tetx-[16px]">
+          <div className="w-[472px] text-center m-7 text-white font-inter text-[16px]">
             Get Early Access to
             <span className="bg-colabify-blue px-1 py-1 rounded-sm mx-1">
               Collabify,
@@ -30,7 +30,7 @@ const Home = () => {
             launch.
           </div>
           <div className="flex">
-            <Link to={"/collabify/business"}>
+            <Link to={"/collabify/brand"}>
               <div className="relative cursor-pointer m-[8px] hover:opacity-75">
                 <div className="flex justify-center items-center bg-colabify-green w-[162px] h-[56px] rounded-[82px] z-10text-[16px] font-inter font-medium text-colabify-textYellow absolute -top-[8px]">
                   I am a Brand

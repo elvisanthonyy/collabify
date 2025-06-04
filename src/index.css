@@ -20,8 +20,11 @@
   --color-colabify-blue: #7f22ff;
   --color-colabify-black: #202020;
   --color-colabify-grayInput: #f7f7f7;
+  --color-colabify-backBtn: #f2f2f2;
   --color-colabify-textBlack: #323232;
   --color-colabify-textYellow: #131702;
+  --color-colabify-label: #3d3d3d;
+  --color-colabify-text: #b5b5b5;
   --font-inter: Inter, sans-serif;
   --font-jarkata: Jarkata, sans-serif;
 }
