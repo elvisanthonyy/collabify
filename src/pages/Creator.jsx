@@ -5,10 +5,10 @@ import { useState } from "react";
 
 const Creator = () => {
   return (
-    <div className="h-[100vh] w-full bg-colabify-back relative">
+    <div className="h-[100dvh] w-full bg-colabify-back relative">
       <Header name="creator" />
       <Background />
-      <Form />
+      <Form name="creator" />
     </div>
   );
 };

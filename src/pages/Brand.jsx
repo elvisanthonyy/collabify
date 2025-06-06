@@ -7,7 +7,7 @@ const Brand = () => {
   //state for index of input to determine what will show next
 
   return (
-    <div className="h-[110vh] w-full bg-colabify-back relative">
+    <div className="h-[100dvh] w-full bg-colabify-back relative">
       <Header name="brand" />
       <Form name="brand" />
       {/* Background component */}

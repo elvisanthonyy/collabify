@@ -15,7 +15,7 @@ const Home = () => {
           </div>*/
   return (
     <>
-      <div className="h-[100vh] w-full bg-colabify-back relative">
+      <div className="h-[100dvh] w-full bg-colabify-back relative">
         <Header name="home" />
         <div className="flex flex-col justify-center items-center top-[50%] left-[50%] relative -translate-x-[50%] -translate-y-[50%] z-10">
           <div>

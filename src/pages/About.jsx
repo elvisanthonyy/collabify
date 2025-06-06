@@ -7,7 +7,7 @@ import tri from "../assets/yellow_tri.png";
 
 const About = () => {
   return (
-    <div className="h-[100vh] w-full bg-colabify-back relative">
+    <div className="h-[100dvh] w-full bg-colabify-back relative">
       <Header name="about" />
       <div className="absolute w-full h-full bg-black/30 z-8 backdrop-blur-[8px]"></div>
       <div className="flex flex-col md:h-[75vh] h-[80vh] w-[80%] md:w-[35%] overflow-hidden items-center top-[50%] left-[50%] relative -translate-x-[50%] md:-translate-y-[50%] -translate-y-[45%]  bg-white rounded-[24px] z-10 -rotate-1">
