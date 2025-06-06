@@ -19,9 +19,9 @@ const Home = () => {
         <Header name="home" />
         <div className="flex flex-col justify-center items-center top-[50%] left-[50%] relative -translate-x-[50%] -translate-y-[50%] z-10">
           <div>
-            <img src={soon} className=""></img>
+            <img src={soon} className="h-40 xl:h-60"></img>
           </div>
-          <div className="w-[472px] text-center m-7 text-white font-inter text-[16px]">
+          <div className="2xl:w-[472px] w-[300px] text-center m-7 text-white font-inter text-[16px]">
             Get Early Access to
             <span className="bg-colabify-blue px-1 py-1 rounded-sm mx-1">
               Collabify,
@@ -29,21 +29,21 @@ const Home = () => {
             Join as a creator or brand and be the first to onboard when we
             launch.
           </div>
-          <div className="flex">
+          <div className="flex flex-col md:flex-row items-center">
             <Link to={"/collabify/brand"}>
               <div className="relative cursor-pointer m-[8px] hover:opacity-75">
-                <div className="flex justify-center items-center bg-colabify-green w-[162px] h-[56px] rounded-[82px] z-10text-[16px] font-inter font-medium text-colabify-textYellow absolute -top-[8px]">
+                <div className="flex  justify-center items-center bg-colabify-green w-[250px] md:w-[162px] h-[56px] rounded-[82px] z-10text-[16px] font-inter font-medium text-colabify-textYellow absolute -top-[8px]">
                   I am a Brand
                 </div>
-                <div className="flex justify-center bg-colabify-darkGreen w-[162px] h-[56px] rounded-[64px] overflow-hidden  z-8"></div>
+                <div className="flex justify-center bg-colabify-darkGreen w-[250px] md:w-[162px] h-[56px] rounded-[64px] overflow-hidden  z-8"></div>
               </div>
             </Link>
             <Link to={"/collabify/creator"}>
               <div className="relative cursor-pointer m-[8px] hover:opacity-75">
-                <div className="flex justify-center items-center bg-white w-[162px] h-[56px] rounded-[82px] z-10 text-[16px] font-inter font-medium text-colabify-black absolute -top-[8px]">
+                <div className="flex justify-center items-center bg-white w-[250px] md:w-[162px] h-[56px] rounded-[82px] z-10 text-[16px] font-inter font-medium text-colabify-black absolute -top-[8px]">
                   I am a Creator
                 </div>
-                <div className="flex justify-center bg-colabify-grey w-[162px] h-[56px] rounded-[64px] overflow-hidden  z-8"></div>
+                <div className="flex justify-center bg-colabify-grey w-[250px] md:w-[162px] h-[56px] rounded-[64px] overflow-hidden  z-8"></div>
               </div>
             </Link>
           </div>

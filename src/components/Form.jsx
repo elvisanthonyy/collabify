@@ -44,8 +44,24 @@ const Form = ({ name }) => {
         }
         formIndex < 3 && setFormIndex(formIndex + 1);
       }
+    } else if (formIndex === 1) {
+      if (
+        formData.socialMedia === "" ||
+        formData.instagramHandle === "" ||
+        formData.tiktokHandle === "" ||
+        formData.creatorsWorkedWithPast == ""
+      ) {
+        setError("Please fill in all fields");
+        return;
+      } else {
+        formIndex < 3 && setFormIndex(formIndex + 1);
+      }
     } else {
-      if (formData.location === "" || formData.age === 0) {
+      if (
+        formData.creatorsWorkedWith === "" ||
+        formData.campaignBudget === "" ||
+        formData.minimumPayout === ""
+      ) {
         setError("Please fill in all fields");
         return;
       } else {
@@ -56,7 +72,9 @@ const Form = ({ name }) => {
     setError(false);
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    alert(`You're on the list ${formData.brandName}`);
+  };
 
   const handleBack = () => {
     formIndex > 0 && setFormIndex(formIndex - 1);
@@ -83,7 +101,7 @@ const Form = ({ name }) => {
       {formIndex === 3 && (
         <div className="absolute w-full h-full bg-black/2 z-8 backdrop-blur-xs"></div>
       )}
-      <form className="flex flex-col  h-[85vh] w-[36%]  items-center top-[50%] left-[50%] fixed -translate-x-[50%] -translate-y-[45%] bg-white rounded-[24px] z-10">
+      <form className="flex flex-col  h-[85vh] md:w-[36%] w-full  items-center md:top-[50%] -bottom-4 left-[50%] fixed -translate-x-[50%] md:-translate-y-[45%] bg-white rounded-[24px] z-10">
         <div className="flex justify-between items-center w-[85%] mt-10">
           <div className="relative">
             <div className="flex justify-center items-center h-[48px] text-[24px] font-jarkata font-semibold tracking-tight w-[219px] bg-colabify-blue text-white rounded-[12px]">
@@ -117,7 +135,7 @@ const Form = ({ name }) => {
           {formIndex == 2 ? (
             <div
               className="flex justify-center items-center h-[56px] w-[100%] text-[16px] font-inter bg-colabify-black rounded-[64px] text-white cursor-pointer hover:opacity-80"
-              onClick={handleNext}
+              onClick={handleSubmit}
             >
               {" "}
               Submit

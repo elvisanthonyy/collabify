@@ -62,7 +62,7 @@ const Handles = ({ formData, setFormData }) => {
             setFormData({ ...formData, creatorsWorkedWithPast: e.target.value })
           }
         >
-          <option value="" disabled selected>
+          <option value="" disabled defaultValue>
             Select your country
           </option>
           <option value="India">India</option>

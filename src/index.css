@@ -1,13 +1,11 @@
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/inter-v3-latin-regular.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
+  src: url("../src/assets/fonts/Inter_24pt-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Jarkata";
-  src: url("/fonts/jarkata-v1-latin-regular.woff2") format("woff2");
+  src: url("../src/assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
 }
 
 @import "tailwindcss";

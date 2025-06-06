@@ -16,7 +16,7 @@ const Budget = ({ formData, setFormData, setError }) => {
             setFormData({ ...formData, creatorsWorkedWith: e.target.value })
           }
         >
-          <option value="" disabled selected>
+          <option value="" disabled defaultValue>
             Select your country
           </option>
           <option value="India">India</option>
@@ -40,7 +40,7 @@ const Budget = ({ formData, setFormData, setError }) => {
             setFormData({ ...formData, campaignBudget: e.target.value })
           }
         >
-          <option value="" disabled selected>
+          <option value="" disabled defaultValue>
             Select your country
           </option>
           <option value="N50,000-N100,000">N50,000-N100,000</option>
