@@ -101,7 +101,7 @@ const Form = ({ name }) => {
       {formIndex === 3 && (
         <div className="absolute w-full h-full bg-black/2 z-8 backdrop-blur-xs"></div>
       )}
-      <form className="flex flex-col  h-[85vh] md:w-[36%] w-full  items-center md:top-[50%] -bottom-4 left-[50%] fixed -translate-x-[50%] md:-translate-y-[45%] bg-white rounded-[24px] z-10">
+      <form className="flex flex-col  h-[75vh] md:w-[36%] w-full  items-center md:top-[50%] -bottom-4 left-[50%] fixed -translate-x-[50%] md:-translate-y-[45%] bg-white rounded-[24px] z-10">
         <div className="flex justify-between items-center w-[85%] mt-10">
           <div className="relative">
             <div className="flex justify-center items-center h-[48px] text-[24px] font-jarkata font-semibold tracking-tight w-[219px] bg-colabify-blue text-white rounded-[12px]">
