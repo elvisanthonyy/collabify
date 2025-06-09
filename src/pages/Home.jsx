@@ -31,7 +31,7 @@ const Home = () => {
           */
   return (
     <>
-      <div className="h-[100dvh] md:h-[115dvh] w-full bg-colabify-back relative">
+      <div className="h-[110dvh] md:h-[115dvh] w-full bg-colabify-back relative">
         <Header name="home" />
 
         <Copy state="notDone" />

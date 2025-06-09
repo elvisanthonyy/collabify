@@ -9,7 +9,7 @@ import cancel from "../assets/cancel.svg";
 const Header = ({ name }) => {
   return (
     <div>
-      <div className="flex items-center justify-between md:justify-center w-[90%] fixed top-6 left-[50%] -translate-x-[50%] z-16">
+      <div className="flex items-center justify-between md:justify-center w-[85%] fixed top-8 left-[50%] -translate-x-[50%] z-16">
         {name == "creator" || name == "brand" ? (
           <Link to={"/collabify/"}>
             <div className=" flex justify-center items-center h-[40px] w-[40px] bg-white/8 rounded-full md:ml-2 md:mr-2 ml-2 backdrop-blur-[8px]">

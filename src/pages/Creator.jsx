@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Creator = () => {
   return (
-    <div className="h-[115dvh] w-full bg-colabify-back relative">
+    <div className="transition-all h-[115dvh] w-full bg-colabify-back relative">
       <Background />
       <BrandCreatorMain name="creator" />
     </div>

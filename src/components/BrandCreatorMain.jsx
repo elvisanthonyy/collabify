@@ -203,7 +203,7 @@ const Form = ({ name }) => {
         <div className="absolute w-full h-full bg-black/2 z-8 backdrop-blur-xs z-15"></div>
       )}
       {submitted && (
-        <div className="fixed -rotate-1 flex flex-col justify-center items-center h-[70vh] md:h-[60vh] md:w-[27%] w-full top-[50%] left-[50%] -translate-x-[50%] -translate-y-[45%] bg-white rounded-[24px] p-6 z-20">
+        <div className="fixed -rotate-1 flex flex-col justify-center items-center h-[77vh] md:h-[60vh] md:w-[27%] w-[82%] top-[50%] left-[50%] -translate-x-[50%] -translate-y-[45%] bg-white rounded-[24px] p-6 z-20">
           <Link to={"/collabify/"}>
             <div className=" flex justify-center cursor-pointer absolute top-5 right-5 rounded-[50%] border-black items-center h-[40px] w-[40px] bg-black/20  mx-2 z-10">
               <img src={cancel} alt="cancel" className="text-red-200"></img>
@@ -226,7 +226,7 @@ const Form = ({ name }) => {
       <form
         className={`flex flex-col ${
           submitted ? "hidden" : "fixed"
-        } h-[85vh] md:h-[85vh] md:w-[60%] lg:h-[630px] lg:w-[612px] w-full  items-center md:top-[50%] -bottom-4 left-[50%] -translate-x-[50%] md:-translate-y-[45%] bg-white rounded-[24px] z-16`}
+        } h-[75vh] md:h-[85vh] md:w-[60%] lg:h-[630px] lg:w-[612px] w-full  items-center md:top-[50%] -bottom-4 left-[50%] -translate-x-[50%] md:-translate-y-[45%] bg-white rounded-[24px] z-16`}
       >
         <div className="flex justify-between items-center w-[85%] mt-10">
           <div className="relative">

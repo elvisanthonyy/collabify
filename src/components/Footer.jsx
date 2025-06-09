@@ -2,8 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between items-center fixed w-[90%] bottom-6 left-[50%] -translate-x-[50%] z-15">
-      <div></div>
+    <div className="flex md:justify-between justify-center items-center fixed w-[90%] bottom-8 left-[50%] -translate-x-[50%] z-15">
+      <div className='text-white hidden md:flex'>Copyright</div>
+      <div>
       <svg
         width="180"
         height="48"
@@ -75,6 +76,7 @@ const Footer = () => {
           stroke-linejoin="round"
         />
       </svg>
+      </div>
     </div>
   );
 };

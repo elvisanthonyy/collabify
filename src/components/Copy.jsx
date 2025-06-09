@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Copy = () => {
   return (
     <div
-      className={`flex flex-col justify-center  w-full fixed items-center top-[55%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-10`}
+      className={`flex flex-col justify-center  w-full fixed items-center top-[55%] left-[50%] -translate-x-[50%] md:-translate-y-[50%] z-10 -translate-y-[58%]`}
     >
       <svg
-        className="md:h-[250px] md:w-full h-[230px]"
+        className="md:h-[250px] md:w-full w-[70%]"
         viewBox="0 0 415 250"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ const Copy = () => {
           </clipPath>
         </defs>
       </svg>
-      <div className="2xl:w-[472px] w-[300px] text-center m-7 text-white font-inter text-[16px] ">
+      <div className="2xl:w-[472px] md:w-[300px] w-[80%] text-center m-7 mb-8 text-white font-inter text-[16px] ">
         Get Early Access to
         <span className="bg-colabify-blue px-1 py-1 rounded-sm mx-1">
           Collabify,
@@ -101,21 +101,21 @@ const Copy = () => {
         Join as a creator or brand and be the first to onboard when we launch.
       </div>
 
-      <div className="flex flex-col w-full md:w-30  md:flex-row md:w-90">
+      <div className="flex flex-col h-fit md:items-center w-full md:w-30  md:flex-row md:w-100">
         <Link to={"/collabify/brand"}>
-          <div className="flex justify-center relative cursor-pointer w-full mb-5 hover:opacity-75 ">
-            <div className="flex  justify-center  items-center bg-colabify-green w-[90%] md:w-[162px] h-[56px] rounded-[82px] z-10text-[16px] font-inter font-medium text-colabify-textYellow absolute -top-[8px] z-10">
+          <div className="flex justify-center relative cursor-pointer w-full md:ml-3 md:mr-3  mb-5 ">
+            <div className="flex  justify-center  items-center bg-colabify-green w-[80%] md:w-[162px] h-[56px] rounded-[82px] z-10 text-[16px] font-inter font-medium text-colabify-textYellow absolute -top-[8px] z-10">
               I am a Brand
             </div>
-            <div className="flex justify-center bg-colabify-darkGreen  md:w-[162px] w-[90%]  h-[56px] rounded-[64px] overflow-hidden  z-8"></div>
+            <div className="flex justify-center bg-colabify-darkGreen  md:w-[162px] w-[80%]  h-[56px] rounded-[64px] overflow-hidden  z-8"></div>
           </div>
         </Link>
         <Link to={"/collabify/creator"}>
-          <div className="flex justify-center relative cursor-pointer w-[90%] w-full mb-5 hover:opacity-75 ">
-            <div className="flex justify-center items-center bg-white w-[90%] md:w-[162px] h-[56px] rounded-[82px] z-10 text-[16px] font-inter font-medium text-colabify-black absolute -top-[8px] z-10">
+          <div className="flex justify-center relative cursor-pointer w-full mb-5 md:ml-3 md:mr-3  ">
+            <div className="flex justify-center items-center bg-white w-[80%] md:w-[162px] h-[56px] rounded-[82px] z-10 text-[16px] font-inter font-medium text-colabify-black absolute -top-[8px] z-10">
               I am a Creator
             </div>
-            <div className="flex justify-center bg-colabify-grey w-[90%] md:w-[162px] h-[56px] rounded-[64px] overflow-hidden  z-8"></div>
+            <div className="flex justify-center bg-colabify-grey w-[80%] md:w-[162px] h-[56px] rounded-[64px] overflow-hidden  z-8"></div>
           </div>
         </Link>
       </div>
