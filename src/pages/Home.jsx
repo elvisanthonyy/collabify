@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Background from "../components/Background.jsx";
 import Header from "../components/Header.jsx";
@@ -6,6 +6,7 @@ import Header from "../components/Header.jsx";
 import Copy from "../components/Copy.jsx";
 
 const Home = () => {
+  const [isMounted, setIsMounted] = useState(false);
   /*<div className="flex flex-col justify-center items-center relative mb-9">
             <div className="flex justify-center items-center w-[414px] h-[104px] bg-colabify-green rounded-[16px] border-white border-[8px] text-[5.3em] overflow-hidden">
               Coming
@@ -29,9 +30,16 @@ const Home = () => {
             </div>
           </div>
           */
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   return (
     <>
-      <div className="h-[110dvh] md:h-[115dvh] w-full bg-colabify-back relative">
+      <div
+        className={`h-[110dvh] md:h-[115dvh] w-full bg-colabify-back relative ${
+          isMounted ? "opacity-100" : "translate-y-[100%] opacity-0"
+        } transition-all duration-300 ease-in`}
+      >
         <Header name="home" />
 
         <Copy state="notDone" />

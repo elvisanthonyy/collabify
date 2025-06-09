@@ -38,7 +38,7 @@ const Header = ({ name }) => {
           </div>
         </Link>
         {name == "home" || name == "creator" || name == "brand" ? (
-          <div className="h-[40px] w-[40px] bg-white/8 rounded-full mx-2 flex justify-center items-center">
+          <div className="h-[40px] w-[40px] bg-white/8 rounded-full mx-2 flex justify-center items-center hover:w-30 transition-[width] duration-400 ease-in-out">
             <svg
               width="24"
               height="24"

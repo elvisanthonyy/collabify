@@ -7,10 +7,11 @@ import tri from "../assets/yellow_tri.png";
 import starField from "../assets/star_field.png";
 import Header from "./Header.jsx";
 import cancel from "../assets/cancel.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Copy from "./Copy.jsx";
 
 const Form = ({ name }) => {
+  const navigate = useNavigate();
   const [formIndex, setFormIndex] = useState(0);
   // state management for inputs
 
@@ -123,7 +124,9 @@ const Form = ({ name }) => {
       } else {
         setError(false);
         setSubmitted(true);
-
+        setTimeout(() => {
+          navigate("/collabify/");
+        }, 2000);
         // Here you can handle the form submission, e.g., send data to an API
         console.log("Form submitted", formData);
       }
@@ -141,6 +144,9 @@ const Form = ({ name }) => {
       } else {
         setError(false);
         setSubmitted(true);
+        setTimeout(() => {
+          navigate("/collabify/");
+        }, 2000);
         // Here you can handle the form submission, e.g., send data to an API
         console.log("Form submitted", formData);
       }
@@ -226,7 +232,7 @@ const Form = ({ name }) => {
       <form
         className={`flex flex-col ${
           submitted ? "hidden" : "fixed"
-        } h-[75vh] md:h-[85vh] md:w-[60%] lg:h-[630px] lg:w-[612px] w-full  items-center md:top-[50%] -bottom-4 left-[50%] -translate-x-[50%] md:-translate-y-[45%] bg-white rounded-[24px] z-16`}
+        } h-[80vh] md:h-[85vh] md:w-[60%] lg:h-[630px] lg:w-[612px] w-full  items-center md:top-[50%] -bottom-4 left-[50%] -translate-x-[50%] md:-translate-y-[45%] bg-white rounded-[24px] z-16`}
       >
         <div className="flex justify-between items-center w-[85%] mt-10">
           <div className="relative">
