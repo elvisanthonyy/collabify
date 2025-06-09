@@ -1,14 +1,13 @@
 import Background from "../components/Background.jsx";
 import Header from "../components/Header.jsx";
-import Form from "../components/Form.jsx";
+import BrandCreatorMain from "../components/BrandCreatorMain.jsx";
 import { useState } from "react";
 
 const Creator = () => {
   return (
-    <div className="h-[100dvh] w-full bg-colabify-back relative">
-      <Header name="creator" />
+    <div className="h-[115dvh] w-full bg-colabify-back relative">
       <Background />
-      <Form name="creator" />
+      <BrandCreatorMain name="creator" />
     </div>
   );
 };

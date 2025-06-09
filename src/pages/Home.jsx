@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Background from "../components/Background.jsx";
 import Header from "../components/Header.jsx";
-import soon from "../assets/copy.png";
+
+import Copy from "../components/Copy.jsx";
 
 const Home = () => {
   /*<div className="flex flex-col justify-center items-center relative mb-9">
@@ -12,42 +13,29 @@ const Home = () => {
             <div className="flex justify-center items-center text-white w-[336px] h-[113px] -rotate-3 bg-colabify-blue rounded-[16px] border-black border-[8px] text-[5.3em] overflow-hidden relative bottom-3">
               Soon
             </div>
-          </div>*/
+          </div>
+          <div>
+            <div className="flex justify-center items-center h-[104px] w-[414px] bg-colabify-green border-[8px]  border-white rounded-[16px] z-14 font-jarkata font-extrabold  text-[86px]">
+              Coming
+            </div>
+            <div className=" w-0 h-0 border-t-[83px] border-white border-l-[177px] border-l-transparent border-r-[0px] border-r-transparent ml-[4.5px] -mt-1 text-colabify-textYellow"></div>
+          </div>
+          <div className="">
+            <div className="flex justify-center items-center h-[113px] w-[336px] bg-colabify-blue -mt-[89px] ml-5 border-[8px] border-black  rounded-[16px] -rotate-4 font-jarkata font-[1000] text-[76px] text-white z-10">
+              Soon
+            </div>
+            <div className="w-[350px] h-[60px] overflow-hidden -mt-7">
+              <div className=" w-0 h-0 border-t-[70px] border-l-[73px] border-l-transparent border-r-[260px] border-r-transparent ml-22 -mt-5 border-colabify-blue"></div>
+            </div>
+          </div>
+          */
   return (
     <>
-      <div className="h-[100dvh] w-full bg-colabify-back relative">
+      <div className="h-[100dvh] md:h-[115dvh] w-full bg-colabify-back relative">
         <Header name="home" />
-        <div className="flex flex-col justify-center items-center top-[50%] left-[50%] relative -translate-x-[50%] -translate-y-[50%] z-10">
-          <div>
-            <img src={soon} className="h-40 xl:h-60"></img>
-          </div>
-          <div className="2xl:w-[472px] w-[300px] text-center m-7 text-white font-inter text-[16px]">
-            Get Early Access to
-            <span className="bg-colabify-blue px-1 py-1 rounded-sm mx-1">
-              Collabify,
-            </span>
-            Join as a creator or brand and be the first to onboard when we
-            launch.
-          </div>
-          <div className="flex flex-col md:flex-row items-center">
-            <Link to={"/collabify/brand"}>
-              <div className="relative cursor-pointer m-[8px] hover:opacity-75">
-                <div className="flex  justify-center items-center bg-colabify-green w-[250px] md:w-[162px] h-[56px] rounded-[82px] z-10text-[16px] font-inter font-medium text-colabify-textYellow absolute -top-[8px]">
-                  I am a Brand
-                </div>
-                <div className="flex justify-center bg-colabify-darkGreen w-[250px] md:w-[162px] h-[56px] rounded-[64px] overflow-hidden  z-8"></div>
-              </div>
-            </Link>
-            <Link to={"/collabify/creator"}>
-              <div className="relative cursor-pointer m-[8px] hover:opacity-75">
-                <div className="flex justify-center items-center bg-white w-[250px] md:w-[162px] h-[56px] rounded-[82px] z-10 text-[16px] font-inter font-medium text-colabify-black absolute -top-[8px]">
-                  I am a Creator
-                </div>
-                <div className="flex justify-center bg-colabify-grey w-[250px] md:w-[162px] h-[56px] rounded-[64px] overflow-hidden  z-8"></div>
-              </div>
-            </Link>
-          </div>
-        </div>
+
+        <Copy state="notDone" />
+
         <Background name="home" />
       </div>
     </>

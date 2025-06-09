@@ -1,6 +1,12 @@
 import { useState } from "react";
 
-const PersonalInfo = ({ formData, setFormData, setError }) => {
+const PersonalInfo = ({
+  formData,
+  setFormData,
+  setError,
+  validateEmail,
+  checkField,
+}) => {
   return (
     <div className="w-full">
       <div className="flex flex-col items-center justify-center my-2">
@@ -14,11 +20,7 @@ const PersonalInfo = ({ formData, setFormData, setError }) => {
           placeholder="Enter Brandname "
           onChange={(e) => {
             setFormData({ ...formData, brandName: e.target.value });
-            if (e.target.value === "") {
-              setError("Please enter a brand name");
-            } else {
-              setError(false);
-            }
+            checkField(e.target.value, "Brand Name");
           }}
         />
       </div>
@@ -35,7 +37,7 @@ const PersonalInfo = ({ formData, setFormData, setError }) => {
           placeholder="Enter Email"
           onChange={(e) => {
             setFormData({ ...formData, email: e.target.value });
-            if (e.target.value.includes("@") === false) {
+            if (validateEmail(e.target.value) === false) {
               setError("Please enter a valid email");
             } else {
               setError(false);
@@ -48,7 +50,7 @@ const PersonalInfo = ({ formData, setFormData, setError }) => {
           Whatsapp Number
         </label>
         <input
-          type="text"
+          type="number"
           value={formData.whatsappNo}
           className={`bg-colabify-grayInput p-2 outline-none text-[14px] text-colabify-black h-[48px] w-full mx-10 my-2 px-3 rounded-[12px] `}
           placeholder="Enter WhatsApp no"
@@ -56,6 +58,8 @@ const PersonalInfo = ({ formData, setFormData, setError }) => {
             setFormData({ ...formData, whatsappNo: e.target.value });
             if (e.target.value === "") {
               setError("Please enter a whatsapp no");
+            } else if (e.target.value.length < 11) {
+              setError("Please enter a valid whatsapp no");
             } else {
               setError(false);
             }
@@ -70,7 +74,7 @@ const PersonalInfo = ({ formData, setFormData, setError }) => {
           type="text"
           value={formData.refCode}
           className={`bg-colabify-grayInput p-2 outline-none text-[14px] text-colabify-black h-[48px] w-full mx-10 my-2 px-3 rounded-[12px] `}
-          placeholder="Enter Refferal Code"
+          placeholder="Refferal Code (optional)"
           onChange={(e) =>
             setFormData({ ...formData, refCode: e.target.value })
           }

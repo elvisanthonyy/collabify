@@ -1,6 +1,6 @@
 import React from "react";
 
-const Budget = ({ formData, setFormData, setError }) => {
+const Budget = ({ formData, setFormData, checkField }) => {
   return (
     <div className="w-full">
       <div className="flex flex-col items-center justify-center my-2">
@@ -12,9 +12,13 @@ const Budget = ({ formData, setFormData, setError }) => {
          
         `}
           value={formData.creatorsWorkedWith}
-          onChange={(e) =>
-            setFormData({ ...formData, creatorsWorkedWith: e.target.value })
-          }
+          onChange={(e) => {
+            setFormData({
+              ...formData,
+              creatorsWorkedWith: e.target.value,
+            });
+            checkField(e.target.value, "creators work with");
+          }}
         >
           <option value="" disabled defaultValue>
             Select your country
@@ -36,9 +40,13 @@ const Budget = ({ formData, setFormData, setError }) => {
          
         `}
           value={formData.campaignBudget}
-          onChange={(e) =>
-            setFormData({ ...formData, campaignBudget: e.target.value })
-          }
+          onChange={(e) => {
+            setFormData({
+              ...formData,
+              campaignBudget: e.target.value,
+            });
+            checkField(e.target.value, "a campaign budget");
+          }}
         >
           <option value="" disabled defaultValue>
             Select your country
@@ -58,9 +66,13 @@ const Budget = ({ formData, setFormData, setError }) => {
           value={formData.minimumPayout}
           className={`bg-colabify-grayInput p-2 outline-none h-[48px] text-[14px] text-colabify-black min-w-full mx-10 mt-2 px-3 rounded-[12px] `}
           placeholder="Enter amount"
-          onChange={(e) =>
-            setFormData({ ...formData, minimumPayout: e.target.value })
-          }
+          onChange={(e) => {
+            setFormData({
+              ...formData,
+              minimumPayout: e.target.value,
+            });
+            checkField(e.target.value, "a minimum payout");
+          }}
         />
       </div>
     </div>

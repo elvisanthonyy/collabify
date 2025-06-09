@@ -1,23 +1,8 @@
-import { useState } from "react";
+import React from "react";
 
-const Handles = ({ formData, setFormData, checkField }) => {
+const CreatorHandle = ({ formData, setFormData, checkField }) => {
   return (
     <div className="w-full">
-      <div className="flex flex-col items-center justify-center my-2">
-        <label className="mr-auto text-[14px] text-colabify-label font-inter">
-          Social media handle
-        </label>
-        <input
-          type="text"
-          value={formData.socialMedia}
-          className={`bg-colabify-grayInput p-2 outline-none text-[14px] text-colabify-black h-[48px] w-full mx-10 my-2 px-3 rounded-[12px] `}
-          placeholder="Enter name"
-          onChange={(e) => {
-            setFormData({ ...formData, socialMedia: e.target.value });
-            checkField(e.target.value, "a Social Media Handle");
-          }}
-        />
-      </div>
       <div className="flex flex-col items-center justify-center my-2">
         <label className="mr-auto text-[14px] text-colabify-label font-inter">
           Instagram handle
@@ -30,8 +15,11 @@ const Handles = ({ formData, setFormData, checkField }) => {
         `}
           placeholder="Enter name"
           onChange={(e) => {
-            setFormData({ ...formData, instagramHandle: e.target.value });
-            checkField(e.target.value, "an instagram Handle");
+            setFormData({
+              ...formData,
+              instagramHandle: e.target.value,
+            });
+            checkField(e.target.value, "an instagram handle");
           }}
         />
       </div>
@@ -47,30 +35,51 @@ const Handles = ({ formData, setFormData, checkField }) => {
         `}
           placeholder="Enter name"
           onChange={(e) => {
-            setFormData({ ...formData, tiktokHandle: e.target.value });
-            checkField(e.target.value, "a tiktok Handle");
+            setFormData({
+              ...formData,
+              tiktokHandle: e.target.value,
+            });
+            checkField(e.target.value, "a tiktok handle");
           }}
         />
       </div>
       <div className="flex flex-col items-center justify-center my-2">
         <label className="mr-auto text-[14px] text-colabify-label font-inter">
-          what kind of creators have you work with in the past?
+          Youtube Link
+        </label>
+        <input
+          type="text"
+          value={formData.youtubeLink}
+          className={`bg-colabify-grayInput p-2 outline-none text-[14px] text-colabify-black h-[48px] w-full mx-10 my-2 px-3 rounded-[12px] `}
+          placeholder="Enter link"
+          onChange={(e) => {
+            setFormData({
+              ...formData,
+              youtubeLink: e.target.value,
+            });
+            checkField(e.target.value, "a tiktok handle");
+          }}
+        />
+      </div>
+      <div className="flex flex-col items-center justify-center my-2">
+        <label className="mr-auto text-[14px] text-colabify-label font-inter">
+          what kind of promotions do you accept?
         </label>
         <select
           className={`bg-colabify-grayInput p-2 outline-none text-[14px] text-colabify-black h-[48px] w-full mx-10 my-2 px-3 rounded-[12px] 
          
         `}
-          value={formData.creatorsWorkedWithPast}
+          value={formData.promotionAccepted}
           onChange={(e) => {
             setFormData({
               ...formData,
-              creatorsWorkedWithPast: e.target.value,
+              promotionAccepted: e.target.value,
             });
-            checkField(e.target.value, "creators work with in the past");
+            checkField(e.target.value, "promotion accepted");
           }}
         >
           <option value="" disabled defaultValue>
-            Select your country
+            choose an option
           </option>
           <option value="India">India</option>
           <option value="USA">USA</option>
@@ -84,4 +93,4 @@ const Handles = ({ formData, setFormData, checkField }) => {
   );
 };
 
-export default Handles;
+export default CreatorHandle;

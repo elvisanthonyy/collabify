@@ -5,7 +5,8 @@
 
 @font-face {
   font-family: "Jarkata";
-  src: url("../src/assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  src: url("../src/assets/fonts/PlusJakartaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @import "tailwindcss";
